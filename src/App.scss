@@ -1,131 +1,17 @@
 
-
-* {
-    margin: 0px;
-    padding:0px;
-}
 .App {
+    display: grid;
     margin: 0px auto;
     padding-top: 20px;
-    width: 70%;
-    height: 700px;
-    display: grid;
+    width: 80%;
     grid-template-columns: 2fr 10fr;
-    grid-template-rows: 1fr 5fr 5fr;
-    grid-gap:10px;
+    grid-template-rows: 1fr 10fr;
+    grid-gap: 10px;
 
-    grid-template-areas: "header header"
-                         "site-bar main "
-                         "site-bar main";
-
-        header {
-            background-color: pink;
-            grid-area:header;
-            display: flex;
-            align-items: center;
-
-                img {
-                    width: 50px;
-                    height:50px;
-                    margin:10px;
-
-                }
-        }      
-
-        .site-bar {
-            background-color:pink;
-            color:black;
-            grid-area:site-bar;
-            color:white;
-            padding-left: 10px;
-            padding-top: 5px;
-
-                nav {
-                    display: flex;
-                    flex-direction: column;
-
-                        a {
-                            margin-bottom: 10px;
-                            font-size: 1.5rem;
-                        }
-                }
-
-        }
-
-        .main-content {
-            grid-area: main;
-                img {
-                    width: 100%;
-                    height:200px;
-                    margin-bottom:10px;
-                }
-                .img_info {
-                    margin-top: 20px;
-                    display: flex;
-                    .img {
-
-                        img {
-                            width: 200px;
-                            height:200px;
-                            margin-right: 40px;
-                        }
-    
-                    }
-                    .info {
-
-                        h1 {
-                            margin-bottom: 20px;
-                            color:#222222;
-                        }
-                    }
-
-                }
-
-                .myPosts {
-                    margin-top: 20px;
-                    width: 90%;
-                    position: relative;
-
-                    h1 {
-                        font-size:25px;
-                        margin-bottom: 15px;
-
+    grid-template-areas:
+                        "header header"
+                        "site-bar main"
+                        "site-bar main"
                         
-                    };
-
-                    .btnSend{
-                        color:white;
-                        margin-top: 20px;
-                        background-color:#00c0ff;
-                        width: 100px;
-                        text-align: center;
-                        padding:10px 0px;
-                        border-radius: 10px;
-                        position: absolute;
-
-                        right: 0px;
-                    }
-                    .inputNews {
-                        background-color:#e4e4e4;
-                        height: 50px;
-                        padding-left: 20px;
-                        padding-top: 10px;
-    
-                        span {
-                            margin-right:30px;
-                            font-size: 20px;
-                            color:#999;
-                            
-                        }
-
-                    }
-                  
-                }
-
-              
-        }
-
+                        ; 
 }
-
-
-      

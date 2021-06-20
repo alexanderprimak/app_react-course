@@ -1,0 +1,77 @@
+.main_content {
+    grid-area: main;
+    white-space: auto;
+    height:800px;
+        img {
+            width: 100%;
+            height:200px;
+            margin-bottom:10px;
+        }
+        .img_info {
+            margin-top: 20px;
+            display: flex;
+
+            .img {
+
+                img {
+                    width: 200px;
+                    height:200px;
+                    margin-right: 40px;
+                }
+
+            }
+            .info {
+
+                h1 {
+                    margin-bottom: 20px;
+                    color:#222222;
+                }
+            }
+
+        }
+
+        .myPosts {
+            margin-top: 20px;
+            margin-bottom: 50px;
+            width: 90%;
+            position: relative;
+
+            h1 {
+                font-size:25px;
+                margin-bottom: 15px;
+
+                
+            };
+
+            .btnSend{
+                color:white;
+                margin-top: 20px;
+                background-color:gray;
+                width: 100px;
+                text-align: center;
+                padding:10px 0px;
+                border-radius: 10px;
+                position: absolute;
+
+                right: 0px;
+            }
+            .inputNews {
+                background-color:#e4e4e4;
+                height: 50px;
+                padding-left: 20px;
+                padding-top: 10px;
+
+                span {
+                    margin-right:30px;
+                    font-size: 20px;
+                    color:#999;
+                    
+                }
+
+            }
+          
+        }
+
+      
+}
+

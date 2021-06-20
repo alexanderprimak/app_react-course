@@ -1,15 +1,17 @@
-import React from 'react'
+import React from 'react';
+import  style from "./main.module.scss";
+import MyPosts from './MyPosts/MyPosts';
 
-function Main_content() {
+function Profile() {
     return (
         
-        <div className = "main-content">
+        <div className = {style.main_content}>
         <img src = "https://i.ytimg.com/vi/-5_jZy-f_yU/maxresdefault.jpg" />
-        <div className = "img_info">
-            <div className = "img">
+        <div className = {style.img_info}>
+            <div className = {style.img}>
               <img src = "https://techpinions.com/wp-content/uploads/2014/04/Fotolia_53885302_Subscription_Monthly_M.jpg" />
             </div>
-            <div className = "info">
+            <div className = {style.info}>
               <h1>Maria Koval</h1>
               <ul>
                 <li>Date of Birth : 13 December</li>
@@ -19,16 +21,18 @@ function Main_content() {
               </ul>
             </div>
         </div>
-        <div className = "myPosts" >
+        <div className = {style.myPosts} >
           <h1>My posts</h1>
-          <div className ="inputNews">
+          <div className = {style.inputNews}>
             <span>your news...</span>
           </div>
-          <div className = "btnSend">Send</div>
+          <div className = {style.btnSend} >Send</div>
         </div>
+        
+           <MyPosts></MyPosts>
       </div>
 
     )
 }
 
-export default Main_content
+export default Profile
